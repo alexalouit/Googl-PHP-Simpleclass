@@ -75,7 +75,7 @@ class googl {
 	public function link($inputUrl) {
 		$buffer = curl_init();
 		curl_setopt($buffer, CURLOPT_URL, $this->server);
-error_log($this->server, 0);
+
 		curl_setopt($buffer, CURLOPT_CONNECTTIMEOUT, $this->connectionTimeout);
 		curl_setopt($buffer, CURLOPT_TIMEOUT, $this->timeout);
 		curl_setopt($buffer, CURLOPT_HEADER, 0);
